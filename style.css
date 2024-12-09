@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("/assets/fonts/CascadiaCode.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: #1e1e2e;
+  padding: 3rem 0px;
+  font-family: "Cascadia Code", serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.profile {
+  width: 20rem;
+  border-radius: 100%;
+}
+
+.title {
+  color: #94e2d5;
+  text-align: center;
+  font-size: 40px;
+}
+
+.name {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 3rem 18rem;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #cdd6f4;
+  font-size: 20px;
+  padding: 20px 0px;
+}
+
+.sub-title {
+  font-size: 30px;
+  color: #89b4fa;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blog {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+a {
+  color: #d4d0b6;
+  font-size: 20px;
+  text-align: center;
+}
+
+a:hover {
+  color: #f2cdcd;
+}
