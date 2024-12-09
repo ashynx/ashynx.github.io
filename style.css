@@ -33,7 +33,7 @@ body {
 .title {
   color: #94e2d5;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .name {
@@ -41,7 +41,7 @@ body {
 }
 
 .container {
-  padding: 3rem 18rem;
+  padding: 0rem 18rem;
 }
 
 .sub-container {
@@ -49,12 +49,12 @@ body {
   flex-direction: column;
   gap: 20px;
   color: #cdd6f4;
-  font-size: 20px;
+  font-size: 16px;
   padding: 20px 0px;
 }
 
 .sub-title {
-  font-size: 30px;
+  font-size: 20px;
   color: #89b4fa;
 }
 
@@ -65,16 +65,22 @@ body {
 }
 
 .blog {
-  padding: 2rem 0;
+  padding: 0rem 0;
   text-align: center;
 }
 
 a {
   color: #d4d0b6;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
 }
 
 a:hover {
   color: #f2cdcd;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
 }
