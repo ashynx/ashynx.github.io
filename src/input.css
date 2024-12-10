@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("/assets/fonts/CascadiaCode.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Cascadia Code", serif;
+  font-weight: 400;
+  font-style: normal;
+}
