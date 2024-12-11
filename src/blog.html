@@ -6,9 +6,44 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link
+      rel="stylesheet"
+      href="./output.css"
+    />
     <title>Blogs</title>
   </head>
-  <body>
-    <h1>Blogs</h1>
+  <body class="bg-[#1e1e2e]">
+    <div class="p-10">
+      <p class="text-center text-3xl text-[#7287fd]">Blogs</p>
+      <div class="py-10">
+        <div
+          class="max-w-sm mx-auto bg-brown-800 rounded-lg shadow-lg overflow-hidden"
+        >
+          <img
+            src="../public/nix-blog.png"
+            alt="Blog Image"
+            class="w-full h-36 object-cover rounded-t-lg"
+          />
+
+          <div class="p-4 bg-[#232634]">
+            <div class="flex justify-between w-full items-center mb-1">
+              <h2 class="text-xl font-semibold text-[#7287fd]">Nixos</h2>
+              <div class="text-sm text-[#c6d0f5] text-right">
+                <p>2 mins read</p>
+              </div>
+            </div>
+            <p class="text-gray-300 text-sm mb-3">
+              A unique linux distribution
+            </p>
+
+            <a
+              href="./blogs/nix.html"
+              class="inline-block bg-[#8B5CF6] text-gray-900 py-1 px-3 rounded-lg hover:bg-[#7C3AED] transition duration-300"
+              >Read</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

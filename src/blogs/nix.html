@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="../output.css"
+    />
+    <title>NixOS</title>
+  </head>
+  <body class="bg-[#1e1e2e]">
+    <div class="flex pt-5 w-full px-10 text-sm text-[#c6d0f5] justify-between">
+      <div class="text-right flex-grow">
+        <p>Wednesday, December 11, 2024</p>
+        <p>453 Words</p>
+        <p>2 mins</p>
+      </div>
+    </div>
+    <div class="flex flex-col items-center gap-5 px-5 md:px-0">
+      <p class="text-center text-3xl text-[#7287fd]">NixOS</p>
+      <img
+        src="../../public/nix-blog.png"
+        alt="nixos image"
+        width="500"
+        class="rounded-lg"
+      />
+      <div class="w-full py-5 md:py-10 md:px-60 flex flex-col gap-5">
+        <div class="flex flex-col gap-3">
+          <p class="text-[#8caaee] text-2xl">What is NixOS?</p>
+          <div class="md:text-lg text-[#c6d0f5] flex flex-col gap-2">
+            <p>
+              - NixOS is a declarative linux distribution, it is based on nix
+              packet manager allowing reproducibility and portability.
+            </p>
+            <p>
+              - It's different from other distribution because of it&apos;s non
+              FHS compliance and configuration.
+            </p>
+            <p>
+              - The whole configuration for the system is written inside a
+              single configuration file <code>configuration.nix</code> - You can
+              also find a <code>hardware-configuration.nix</code> which you
+              probably never have to edit. It contains the configuration for the
+              hardware.
+            </p>
+            <p>
+              - After modifying the configuration files, you can run
+              <code>sudo nixos-rebuild switch</code> to apply the changes or you
+              can run <code>sudo nixos-rebuild test</code> to test the changes.
+            </p>
+            <p>
+              - The <code>nixos-rebuild switch</code> command creates a new
+              generation, So in case the system break, You can rollback to a
+              previous generation.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-3">
+          <p class="text-[#8caaee] text-2xl">What is Nix?</p>
+          <div class="md:text-lg text-[#c6d0f5] flex flex-col gap-2">
+            <p>
+              - Nix is a purely functional packet manager that allows for
+              declarative installation of packages.
+            </p>
+            <p>
+              - Nix can be used as a packet manager, not just in NixOS, in other
+              linux distribution and even in MacOS.
+            </p>
+            <p>
+              - Packages in nix are built from nix expressions, which is a
+              simple functional language.
+            </p>
+            <p>
+              - It allows multiple versions of the same package to be installed
+              but due to its hashing scheme, They don't interfere with each
+              other.
+            </p>
+            <p>
+              If you want to learn more about nix,
+              <a
+                href="https://nixos.org/guides/nix-pills/00-preface"
+                class="text-cyan-400 underline"
+                >nix pills</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-3">
+          <p class="text-[#8caaee] text-2xl">What is Flakes?</p>
+          <div class="md:text-lg text-[#c6d0f5] flex flex-col gap-2">
+            <p>
+              - Flakes is an experimental yet popular feature in NixOS that
+              allows the pinning of versions of the dependencies making the
+              system more reproducible.
+            </p>
+            <p>
+              - The version is pinned in a <code>flake.lock</code> file and the
+              flake expression is written in a <code>flake.nix</code> file.
+            </p>
+            <p>
+              - The pinned versions can be updated to a higher version with the
+              <code>nix flake update</code> command.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-3">
+          <p class="text-[#8caaee] text-2xl">What is Home-Manager?</p>
+          <div class="md:text-lg text-[#c6d0f5] flex flex-col gap-2">
+            <p>
+              - Home manager helps in managing user environment using the nix
+              packet manager.
+            </p>
+            <p>
+              - Home-Manager can be installed as a module or a standalone
+              installation.
+            </p>
+            <p>
+              - It allows you to configure the configs of user specific
+              utilities. For example, You can write the config for hyprland
+              using home-manager so that when you build the system, The configs
+              will be applied automatically.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-3">
+          <p class="text-[#8caaee] text-2xl">Views</p>
+          <div class="md:text-lg text-[#c6d0f5] flex flex-col gap-2">
+            <p>
+              - I personally think NixOS is a great linux distribution that
+              combines stability and recency.
+            </p>
+            <p>
+              - Since it&apos;s non-FHS compliant, it might be hard switching to
+              it initially. But once you get a hang of it, You are good to go.
+            </p>
+            <p>
+              - This one might be the best distro for ricing since you can rice
+              without the fear of breaking your system. If you do break it, just
+              rollback.
+            </p>
+            <p>
+              - I did have issues setting few things up, which I can tell was a
+              nightmare.
+            </p>
+            <p>- Not at all a beginner friendly distro.</p>
+            <p>
+              - The learning curve is very steep but that depends on how deep
+              you go. NixOS can be a rabbit hole.
+            </p>
+            <p>
+              - You will have an exact idea on what's on your system since you
+              are configuring almost everything declaratively.
+            </p>
+            <p>- Best logo out of all other distros</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="text-[#c6d0f5] pb-10">copyright @ ashyn 2024</p>
+      </div>
+    </div>
+  </body>
+</html>

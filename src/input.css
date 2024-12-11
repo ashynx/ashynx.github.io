@@ -14,3 +14,10 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+code {
+  background-color: #51576d;
+  padding: 0 5px;
+  border-radius: 5px;
+  color: black;
+}
