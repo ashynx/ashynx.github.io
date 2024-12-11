@@ -12,48 +12,60 @@
     />
     <title>Ashynx</title>
   </head>
-  <body class="bg-[#1e1e2e]">
+  <body class="bg-[#1e1e2e] text-gray-300">
     <div
-      class="flex flex-col min-h-[100dvh] justify-around items-center px-3 md:px-60 py-5"
+      class="flex flex-col min-h-screen justify-around items-center px-4 py-8 md:px-20 md:py-16"
     >
-      <div class="flex flex-col gap-5 items-center">
+      <div class="flex flex-col items-center gap-6">
         <img
           src="../public/pfp.jpeg"
           alt="profile pic"
-          class="w-40 rounded-full"
+          width="200"
+          class="rounded-full border-4 border-[#04a5e5] shadow-lg"
         />
-        <p class="text-[#04a5e5] text-2xl md:text-3xl text-center">
-          Hi, I am <span class="name">ashyn</span>
+        <p
+          class="text-[#04a5e5] text-2xl md:text-4xl font-semibold text-center"
+        >
+          Hi, I am <span class="font-extrabold text-white">ashyn</span>
         </p>
       </div>
-      <div class="container">
-        <div class="sub-container">
-          <p class="text-[#7287fd] text-xl md:text-3xl pb-3">$whoami</p>
-          <div class="flex flex-col gap-2 text-[#bcc0cc] md:text-lg">
-            <p>
-              - My name is not actually ashyn. It's just a name I like. Since
-              it's the voice that matters, not who owns it. This is a websites I
-              made mainly for expressing my thoughts and opinions.
-            </p>
-            <p>
-              - There are concepts I have heard throughtout my life and I felt
-              some of them were interesting and true and some of them were
-              wrong.
-            </p>
-            <p>
-              - Hence I want to write about these topics stating what science
-              has to say about it and expressing my personal opinions on it.
-            </p>
-            <p>
-              - I will mainly write about topics related to science, technology
-              and myths
-            </p>
-          </div>
+
+      <div
+        class="bg-[#2a2a3e] p-3 md:p-6 rounded-xl shadow-lg mt-8 w-full max-w-3xl"
+      >
+        <div class="text-[#7287fd] text-xl md:text-2xl font-medium pb-4">
+          <p>$whoami</p>
+        </div>
+        <div class="flex flex-col gap-4 text-[#bcc0cc] md:text-xl">
+          <p>
+            - My name isn&apos;t actually Ashyn; it&apos;s simply a name I like.
+            After all, it&apos;s the voice that matters, not the identity behind
+            it. This is a website I made for expressing my thoughts and
+            opinions.
+          </p>
+          <p>
+            - Throughout my life, I've encountered various concepts, some of
+            which I found intriguing and true, while others I believe to be
+            false.
+          </p>
+          <p>
+            - Hence, I want to write about these topics, stating what science
+            has to say about them, and expressing my personal opinions on them.
+          </p>
+          <p>
+            - My focus will primarily be on topics related to science,
+            technology, and myths.
+          </p>
         </div>
       </div>
-      <p class="text-lg md:text-xl text-[#04a5e5] hover:text-[#209fb5]">
-        <a href="./src/blog.html">blogs-></a>
-      </p>
+
+      <div class="mt-8">
+        <p
+          class="text-lg md:text-xl text-[#04a5e5] hover:text-[#209fb5] transition-colors duration-300"
+        >
+          <a href="./src/blog.html">blogs →</a>
+        </p>
+      </div>
     </div>
   </body>
 </html>
